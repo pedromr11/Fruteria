@@ -54,5 +54,7 @@ function uvas(){
 }
 
 function mostrar(){
-    
+    let textarea = document.getElementById("resumen");
+    let variable = document.createTextNode();
+    textarea.appendChild(variable);
 }
