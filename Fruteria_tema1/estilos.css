@@ -1,0 +1,92 @@
+
+/*Cereza*/
+#posicionCereza{
+    float: left;
+}
+
+#cereza{
+    width: 300px;
+    height: 200px;
+}
+
+
+/*Chirimoya*/
+#posicionChirimoya{
+    float: left;
+}
+#chirimoya{
+    width: 300px;
+    height: 300px;
+}
+
+/*Fresa*/
+#posicionFresa{
+    float: left;
+}
+#fresa{
+    width: 300px;
+    height: 200px;
+}
+
+/*Manzana*/
+#posicionManzana{
+    float: left;
+}
+#manzana{
+    width: 250px;
+    height: 250px;
+}
+
+/*Melon*/
+#posicionMelon{
+    float: left;
+}
+#melon{
+    width: 350px;
+    height: 200px;
+}
+
+/*Naranja*/
+#posicionNaranja{
+    float: left;
+}
+#naranja{
+    width: 300px;
+    height: 250px;
+}
+
+/*Pera*/
+#posicionPera{
+   float: left;
+}
+#pera{
+    width: 300px;
+    height: 300px;
+}
+
+/*Platano*/
+#posicionPlatano{
+    float: left;
+}
+#platano{
+    width: 300px;
+    height: 200px;
+}
+
+/*Sandia*/
+#posicionSandia{
+    float: left;
+}
+#sandia{
+    width: 300px;
+    height: 300px;
+}
+
+/*Uvas*/
+#posicionUvas{
+    float: left;
+}
+#uvas{
+    width: 300px;
+    height: 200px;
+}
