@@ -1,60 +1,64 @@
-let ArrayInicializar = [0, 0, 0, 0, 0, 0, 0, 0, 0 ,0];
+let ArrayKilos = [0, 0, 0, 0, 0, 0, 0, 0, 0 ,0];
 let ArrayPrecio = [0.80, 1.30, 1.60, 0.90, 3, 4.50, 2.30, 0.60, 0.50, 1.40];
 let ArrayFrutas = ["Cereza", "Chirimoya", "Fresa", "Manzana", "Melon", "Naranja", "Pera", "Platano", "Sandia", "Uvas"];
 var panoja = 0;
 
-function cereza(){
-    ArrayInicializar[0] = (++ArrayInicializar[0]);
-    panoja = panoja + 0.80;
+function fcereza(num){
+    
+    console.log(num);
+    console.log(ArrayPrecio[num]);
+
+    console.log(ArrayKilos[num] ++);
 }
 
-function chirimoya(){
+function fchirimoya(){
     ArrayInicializar[1] = (++ArrayInicializar[1]);
     panoja = panoja + 1.30;
 }
 
-function fresa(){
+function ffresa(){
     ArrayInicializar[2] = (++ArrayInicializar[2]);
     panoja = panoja + 1.60;
 }
 
-function manzana(){
+function fmanzana(){
     ArrayInicializar[3] = (++ArrayInicializar[3]);
     panoja = panoja + 0.90;
 }
 
-function melon(){
+function fmelon(){
     ArrayInicializar[4] = (++ArrayInicializar[4]);
     panoja = panoja + 3;
 }
 
-function naranja(){
+function fnaranja(){
     ArrayInicializar[5] = (++ArrayInicializar[5]);
     panoja = panoja + 4.50;
 }
 
-function pera(){
+function fpera(){
     ArrayInicializar[6] = (++ArrayInicializar[6]);
     panoja = panoja + 2.30;
 }
 
-function platano(){
+function fplatano(){
     ArrayInicializar[7] = (++ArrayInicializar[7]);
     panoja = panoja + 0.60;
 }
 
-function sandia(){
+function fsandia(){
     ArrayInicializar[8] = (++ArrayInicializar[8]);
     panoja = panoja + 0.50;
 }
 
-function uvas(){
+function fuvas(){
     ArrayInicializar[9] = (++ArrayInicializar[9]);
     panoja = panoja + 1.40;
 }
 
 function mostrar(){
-    let textarea = document.getElementById("resumen");
+    let textarea = document.getElementById("resultado");
+    console.log(textarea.value = "1");
     let variable = document.createTextNode();
     textarea.appendChild(variable);
 }
