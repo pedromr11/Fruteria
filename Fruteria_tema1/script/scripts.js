@@ -4,7 +4,6 @@ let ArrayFrutas = ["Cereza", "Chirimoya", "Fresa", "Manzana", "Melon", "Naranja"
 var panoja = 0;
 
 function fcereza(num){
-    
     console.log(num);
     console.log(ArrayPrecio[num]);
 
