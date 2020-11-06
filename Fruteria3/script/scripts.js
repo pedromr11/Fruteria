@@ -12,6 +12,7 @@ let precioMedio = 0;
 let pedir = 0;
 let fecha = new Date();
 let fruta;
+let mostrar2;
 
 
 
@@ -46,10 +47,9 @@ class Invierno extends Fruta{
 function frutitas(num){  
     
     
-    pedir = prompt("¿Cuántos kilos quieres");
+    pedir = document.getElementsByTagName("input");
 
-
-    ArrayKilos[num] = parseInt(pedir);
+    ArrayKilos[num] = parseInt(pedir[num].value);
 
 
     if(ArrayEstaciones[num] == "V"){
@@ -68,6 +68,12 @@ function frutitas(num){
     }
 
     ArrayObjetos[num] = fruta;
+
+
+    mostrar2 = document.getElementById("lateral");
+
+    mostrar2.innerHTML += ArrayObjetos[num].Nombre +"---"+ pedir[num].value + "<br>"; 
+
     
 }
 
@@ -128,6 +134,7 @@ function mostrar(){
     precioMedio = 0;
 
 }
+
 
 
 
