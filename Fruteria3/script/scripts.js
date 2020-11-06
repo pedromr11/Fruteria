@@ -13,7 +13,8 @@ let pedir = 0;
 let fecha = new Date();
 let fruta;
 let mostrar2;
-
+let textarea;
+let ventana;
 
 
 
@@ -67,6 +68,9 @@ function frutitas(num){
         fruta.Conservar = ArrayConservar[num];
     }
 
+       
+
+
     ArrayObjetos[num] = fruta;
 
 
@@ -79,10 +83,14 @@ function frutitas(num){
 
 
 function mostrar(){
-    let textarea = document.getElementById("resultado");
+    textarea = document.getElementById("resultado");
     
     textarea.value = " ";
-   
+    
+    //ventana = new Window();
+    //ventana.open();
+    //ventana.document.write();
+
     for (let index = 0; index < ArrayFrutas.length; index++) {
         
             if(ArrayEstaciones[index] == "V" && ArrayObjetos[index].Kilos > 0){
@@ -120,7 +128,7 @@ function mostrar(){
     }
     
    
-    
+    window.open("<p>Hola</p>");
 
     precioMedio = Total/kgtotal;  
     
@@ -133,6 +141,19 @@ function mostrar(){
     kgtotal = 0
     precioMedio = 0;
 
+    temporizador();
+}
+
+
+
+function temporizador(){
+    setTimeout(resetear, 10000);
+    
+}
+
+function resetear(){
+    textarea.value = " ";
+    mostrar2.innerHTML = " ";
 }
 
 

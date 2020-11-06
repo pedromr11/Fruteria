@@ -175,10 +175,14 @@
 div{
     width: 200px;
     height: 200px;
-    border: 1px solid black;
+    
 }
 
 input{
     position: absolute;
-    top: 110%;
+    top: 130%;
+}
+
+#precio{
+    top: 100%;
 }
