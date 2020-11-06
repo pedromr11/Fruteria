@@ -4,10 +4,18 @@ let ArrayFrutas = ["Cereza", "Chirimoya", "Fresa", "Manzana", "Melon", "Naranja"
 let Total = 0;
 let kgtotal = 0;
 let precioMedio = 0;
+let pedir = 0;
+let fecha = new Date();
 
-function frutitas(num){
-  
-    ArrayKilos[num] ++;
+
+
+function frutitas(num){  
+    
+    
+    pedir = prompt("¿Cuántos kilos quieres");
+
+
+    ArrayKilos[num] = parseInt(pedir);
 
 }
 
@@ -17,12 +25,14 @@ function mostrar(){
     
     textarea.value = " ";
    
+    textarea.value = "Fecha de compra: " + fecha.toLocaleString() + "\n";
 
     for (let index = 0; index < ArrayFrutas.length; index++) {
         
         if(ArrayKilos[index] > 0){
-            textarea.value += "Nombre: " + ArrayFrutas[index] + " " + "Precio: " + ArrayPrecio[index] + " " + "Cantidad: " + ArrayKilos[index] + "\n";
+            textarea.value += "Nombre: " + ArrayFrutas[index] + " " + "Cantidad: " + ArrayKilos[index]+ " " + "Precio: " + ArrayPrecio[index] + " " + "Precio total: " + (ArrayKilos[index]*ArrayPrecio[index]) + "\n";
 
+            
             Total += (ArrayPrecio[index] * ArrayKilos[index]);
             kgtotal += ArrayKilos[index];
             
@@ -31,12 +41,15 @@ function mostrar(){
             
     }
     
+   
+    //Math.floor(Total.toFixed(2))
+
     precioMedio = Total/kgtotal;  
     
 
-    textarea.value += "Precio total: " + Total + "\n";
+    textarea.value += "Precio total: " + Math.floor(Total.toFixed(2)) + "\n";
     
-    textarea.value += "Precio medio: " + precioMedio;
+    textarea.value += "Precio medio: " + precioMedio.toFixed(3);
    
     Total = 0;
     kgtotal = 0
