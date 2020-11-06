@@ -1,0 +1,155 @@
+/*Centrar*/
+#texto{
+    text-align: center;
+}
+
+#cosas{
+    
+    
+    height: 370px;
+    width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Cereza*/
+#posicionCereza{
+    float: left;
+    
+    height: 370px;
+    width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#cereza{
+    width: 300px;
+    height: 200px;
+}
+
+
+/*Chirimoya*/
+#posicionChirimoya{
+    float: left;
+    
+    height: 370px;
+    width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#chirimoya{
+    width: 280px;
+    height: 280px;
+}
+
+/*Fresa*/
+#posicionFresa{
+    float: left;
+    
+    height: 370px;
+    width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#fresa{
+    width: 300px;
+    height: 200px;
+}
+
+/*Manzana*/
+#posicionManzana{
+    float: left;
+    
+    height: 370px;
+    width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#manzana{
+    width: 250px;
+    height: 250px;
+}
+
+/*Melon*/
+#posicionMelon{
+    float: left;
+    
+    height: 370px;
+    width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#melon{
+    width: 350px;
+    height: 200px;
+}
+
+/*Naranja*/
+#posicionNaranja{
+    float: left;
+    
+    height: 370px;
+    width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#naranja{
+    width: 300px;
+    height: 250px;
+}
+
+/*Pera*/
+#posicionPera{
+   float: left;
+   
+    height: 370px;
+    width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#pera{
+    width: 300px;
+    height: 300px;
+}
+
+/*Platano*/
+#posicionPlatano{
+    float: left;
+    
+    height: 370px;
+    width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#platano{
+    width: 300px;
+    height: 200px;
+}
+
+/*Sandia*/
+#posicionSandia{
+    float: left;
+    
+    height: 370px;
+    width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#sandia{
+    width: 300px;
+    height: 300px;
+}
+
+/*Uvas*/
+#posicionUvas{
+    float: left;
+    
+    height: 370px;
+    width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#uvas{
+    width: 300px;
+    height: 200px;
+}
