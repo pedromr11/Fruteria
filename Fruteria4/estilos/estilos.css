@@ -180,9 +180,10 @@ div{
 
 input{
     position: absolute;
-    top: 130%;
+    top: 140%;
 }
 
 #precio{
-    top: 100%;
+    position: absolute;
+    top: 110%;
 }
