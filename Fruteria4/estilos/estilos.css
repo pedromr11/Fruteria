@@ -1,0 +1,188 @@
+/*Centrar*/
+#texto{
+    text-align: center;
+}
+
+#cosas{
+    
+    position: absolute;
+    height: 370px;
+    width: 375px;
+    left: 40%;
+    top: 100%;
+    
+}
+
+/*Cereza*/
+#posicionCereza{
+    float: left;
+    position: absolute;
+    
+    left: 10%;
+    top: 10%;
+    
+}
+
+#cereza{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+}
+
+
+/*Chirimoya*/
+#posicionChirimoya{
+    float: left;
+    position: absolute;
+    left: 20%;    
+    top: 10%;
+   
+    
+}
+#chirimoya{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+}
+
+/*Fresa*/
+#posicionFresa{
+    float: left;
+    position: absolute;
+    
+    left: 30%;
+    top: 10%;
+    
+}
+#fresa{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+}
+
+/*Manzana*/
+#posicionManzana{
+    float: left;
+    position: absolute;
+    
+    left: 40%;
+    top: 10%;
+    
+}
+#manzana{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+/*Melon*/
+#posicionMelon{
+    float: left;
+    position: absolute;
+    
+    left: 50%;
+    top: 10%;
+    
+}
+#melon{
+    width: 250px;
+    height: 100px;
+    position: absolute;
+}
+
+/*Naranja*/
+#posicionNaranja{
+    float: left;
+    position: absolute;
+    
+    left: 10%;
+    top: 50%;
+   
+}
+#naranja{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+}
+
+/*Pera*/
+#posicionPera{
+   float: left;
+   position: absolute;
+    
+    left: 20%;
+    top: 50%;
+    
+}
+#pera{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+/*Platano*/
+#posicionPlatano{
+    float: left;
+    position: absolute;
+    
+    left: 30%;
+    top: 50%;
+    
+}
+#platano{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+}
+
+/*Sandia*/
+#posicionSandia{
+    float: left;
+    position: absolute;
+   
+    left: 40%;
+    top: 50%;
+    
+}
+#sandia{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+/*Uvas*/
+#posicionUvas{
+    
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    
+}
+#uvas{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+}
+
+#lateral{
+    width: 25%;
+    height: 100%;
+    border: 1px solid black;
+    position: absolute;
+    left: 75%;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    
+}
+
+input{
+    position: absolute;
+    top: 130%;
+}
+
+#precio{
+    top: 100%;
+}
