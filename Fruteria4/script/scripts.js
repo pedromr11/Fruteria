@@ -52,6 +52,8 @@ function frutitas(num){
 
     ArrayKilos[num] = parseInt(pedir[num].value);
 
+   
+
 
     if(ArrayEstaciones[num] == "V"){
         fruta = new Verano();
@@ -76,9 +78,11 @@ function frutitas(num){
 
     mostrar2 = document.getElementById("lateral");
 
-    mostrar2.innerHTML += ArrayObjetos[num].Nombre +"---"+ pedir[num].value + "<br>"; 
+    mostrar2.innerHTML +="<p style='background-color:powderblue;'>" +  ArrayObjetos[num].Nombre +"---"+ pedir[num].value + "</p>"; 
 
-    
+    console.log(mostrar2.childNodes.length-1);
+
+    pedir[num].value = "";
 }
 
 
@@ -128,7 +132,7 @@ function mostrar(){
     }
     
    
-    window.open("<p>Hola</p>");
+    //window.open("<p>Hola</p>");
 
     precioMedio = Total/kgtotal;  
     

@@ -171,7 +171,7 @@
     position: absolute;
     left: 65%;
     top: 5%;
-    overflow: scroll;
+    overflow: auto;
 }
 
 div{
@@ -180,7 +180,7 @@ div{
     
 }
 
-input{
+#input{
     position: absolute;
     top: 140%;
 }
@@ -188,4 +188,12 @@ input{
 #precio{
     position: absolute;
     top: 110%;
+}
+
+#formulario{
+    border: 1px solid black;
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    height: auto;
 }
