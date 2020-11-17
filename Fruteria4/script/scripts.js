@@ -1,3 +1,4 @@
+//Aquí creo todas las variables necesarias
 let ArrayKilos = [0, 0, 0, 0, 0, 0, 0, 0, 0 ,0];
 let ArrayPrecio = [0.80, 1.30, 1.60, 0.90, 3, 4.50, 2.30, 0.60, 0.50, 1.40];
 let ArrayFrutas = ["Cereza", "Chirimoya", "Fresa", "Manzana", "Melon", "Naranja", "Pera", "Platano", "Sandia", "Uvas"];
@@ -17,7 +18,7 @@ let textarea;
 let ventana;
 
 
-
+//Clases para crear los objetos(frutas)
 class Fruta {
     constructor(Nombre, Kilos, Precio){
         this.Nombre = Nombre;
@@ -45,16 +46,17 @@ class Invierno extends Fruta{
 }
 
 
+//Función que recoge los kilos de los input, crea objetos, muestra las frutas en lateral y que vacía los input 
 function frutitas(num){  
     
-    
+    //Recoge los kilos
     pedir = document.getElementsByTagName("input");
-
+    //Los mete en un array
     ArrayKilos[num] = parseInt(pedir[num].value);
 
    
 
-
+    //Crea los objetos
     if(ArrayEstaciones[num] == "V"){
         fruta = new Verano();
         fruta.Nombre = ArrayFrutas[num];
@@ -72,10 +74,10 @@ function frutitas(num){
 
        
 
-
+    //Mete los objetos en un array
     ArrayObjetos[num] = fruta;
 
-
+    //Muestra las frutas y los kilos que queremos en un div a la derecha
     mostrar2 = document.getElementById("lateral");
 
     mostrar2.innerHTML +="<p style='background-color:powderblue;'>" +  ArrayObjetos[num].Nombre +"---"+ pedir[num].value + "</p>"; 
@@ -85,16 +87,15 @@ function frutitas(num){
     pedir[num].value = "";
 }
 
-
+//Función para mostrar las frutas compradas con sus precios y sus kilos, mostrar el mensaje con el tipo de fruta y calcular los precios totales y finales.
 function mostrar(){
     textarea = document.getElementById("resultado");
     
+    //Poner en blanco el textarea
     textarea.value = " ";
     
-    //ventana = new Window();
-    //ventana.open();
-    //ventana.document.write();
-
+    
+    //Mostrar los mensajes de los tipos de frutas que hemos comprado
     for (let index = 0; index < ArrayFrutas.length; index++) {
         
             if(ArrayEstaciones[index] == "V" && ArrayObjetos[index].Kilos > 0){
@@ -115,8 +116,10 @@ function mostrar(){
             }
     }
 
+    //Fecha de la compra
     textarea.value = "Fecha de compra: " + fecha.toLocaleString() + "\n";
 
+    //Crea y muestra el nombre, la cantidad, el precio y el precio total de cada fruta
     for (let index = 0; index < ArrayFrutas.length; index++) {
         
         if(ArrayObjetos[index].Kilos > 0){
@@ -132,11 +135,11 @@ function mostrar(){
     }
     
    
-    //window.open("<p>Hola</p>");
-
+    
+    //Calcula el precio medio
     precioMedio = Total/kgtotal;  
     
-
+    //Muestra el precio total y el precio medio 
     textarea.value += "Precio total: " + Math.floor(Total.toFixed(2)) + "\n";
     
     textarea.value += "Precio medio: " + precioMedio.toFixed(3);
@@ -149,7 +152,7 @@ function mostrar(){
 }
 
 
-
+//A los 10 segundos resetea el div y el textarea
 function temporizador(){
     setTimeout(resetear, 10000);
     
