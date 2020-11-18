@@ -143,7 +143,7 @@ function mostrar(){
     //Poner en blanco el textarea
     textarea.value = " ";
     
-    /*
+   
     //Mostrar los mensajes de los tipos de frutas que hemos comprado
     for (let index = 0; index < ArrayFrutas.length; index++) {
         
@@ -165,7 +165,7 @@ function mostrar(){
             }
     }
 
-    */
+    
 
     //Fecha de la compra
     textarea.value = "Fecha de compra: " + fecha.toLocaleString() + "\n";

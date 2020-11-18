@@ -6,6 +6,7 @@ window.onload = () => {
     boton2 = document.getElementById("botonTerminar");
 
 
+
     boton1.addEventListener("click", (event) => {
         window.close();
     }, false);
