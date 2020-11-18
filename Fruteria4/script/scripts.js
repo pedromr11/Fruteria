@@ -174,5 +174,9 @@ function limpiarFormulario() {
 }
 
 
+function abrirventana(){
+    window.name = "Ventana";
+}
+
 
 
