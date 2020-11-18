@@ -5,6 +5,7 @@ window.onload = () => {
     boton1 = document.getElementById("botonVolver");
     boton2 = document.getElementById("botonTerminar");
 
+
     boton1.addEventListener("click", (event) => {
         window.close();
     }, false);
@@ -14,3 +15,4 @@ window.onload = () => {
         window.close();
     }, false);
 };
+

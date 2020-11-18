@@ -22,7 +22,7 @@ let nombreError;
 let email;
 let emailError;
 let todoCorrecto;
-
+let ventanilla;
 
 //Clases para crear los objetos(frutas)
 class Fruta {
@@ -86,7 +86,7 @@ window.onload = () => {
             event.preventDefault();
         }
         if (todoCorrecto) {
-            let ventanilla = window.open("./emergente.html", "pop-up", "width=500px height=300px");
+            ventanilla = window.open("./emergente.html", "pop-up", "width=500px height=300px");
             event.preventDefault();
         }
     });
@@ -143,7 +143,7 @@ function mostrar(){
     //Poner en blanco el textarea
     textarea.value = " ";
     
-    
+    /*
     //Mostrar los mensajes de los tipos de frutas que hemos comprado
     for (let index = 0; index < ArrayFrutas.length; index++) {
         
@@ -164,6 +164,8 @@ function mostrar(){
 
             }
     }
+
+    */
 
     //Fecha de la compra
     textarea.value = "Fecha de compra: " + fecha.toLocaleString() + "\n";
