@@ -197,3 +197,12 @@ div{
     width: 100%;
     height: auto;
 }
+
+/*Formulario*/
+label {
+    display: block;
+}
+
+.error {
+    color: red;
+}

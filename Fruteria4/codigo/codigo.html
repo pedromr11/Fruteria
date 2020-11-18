@@ -103,14 +103,18 @@
     -->
 
     <div id="formulario">
-       <form action="" method="POST" id="reset" novalidate>
-            <label>Nombre: <input type="text" name="nombre" required></label>
+       <form action="#" method="POST" id="form1" novalidate>
+            <label for="nombre">Nombre: <input type="text" name="nombre" id="nombre" required></label>
+            <span class="error" id="errorNombre"></span>
             <br><br>
-            <label>Apellidos: <input type="text" name="apellidos" size="40" required></label>
+            <label for="apellidos">Apellidos: <input type="text" name="apellidos" id="apellidos" size="40" required></label>
+            <span class="error" id="errorApellidos"></span>
             <br><br>
-            <label>Dirección: <input type="text" name="direccion" size="60" required></label>
+            <label for="direccion">Dirección: <input type="text" name="direccion" id="direccion" size="60" required></label>
+            <span class="error" id="errorDireccion"></span>
             <br><br>
-            <label>Correo: <input type="email" name="correo" size="40" required></label>
+            <label for="mail">Correo: <input type="email" name="mail" id="mail" size="40" required></label>
+            <span class="error" id="errorCorreo"></span>
             <br><br>
 
             <label>Con que se paga:
@@ -130,7 +134,7 @@
             <label><input type="hidden" name="codigoCliente" id="hidden"> </label>
             <br><br>
             <label>
-                <input type="submit" value="Realizar pedido">
+                <button type="submit" value="Realizar pedido">Realizar pedido</button>
                 <br><br>
                 <input type="reset" value="Borrar">
             </label>

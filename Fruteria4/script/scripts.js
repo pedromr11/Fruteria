@@ -16,6 +16,13 @@ let fruta;
 let mostrar2;
 let textarea;
 let ventana;
+let form;
+let nombre;
+let nombreError;
+let email;
+let emailError;
+let todoCorrecto;
+
 
 //Clases para crear los objetos(frutas)
 class Fruta {
@@ -43,6 +50,48 @@ class Invierno extends Fruta{
         this.Conservar = Conservar;
     }
 }
+
+
+window.onload = () => {
+    form = document.getElementById("form1");
+    nombre = document.getElementById("nombre");
+    nombreError = document.getElementById("errorNombre");
+    apellidos = document.getElementById("apellidos");
+    apellidosError = document.getElementById("errorApellidos");
+    direccion = document.getElementById("direccion");
+    direccionError = document.getElementById("errorDireccion");
+    email = document.getElementById("mail");
+    emailError = document.getElementById("errorCorreo");
+
+    form.addEventListener("submit", (event) => {
+        todoCorrecto = true;
+        nombreError.textContent = nombre.validationMessage;
+        if (!nombre.validity.valid) {
+            todoCorrecto = false;
+            event.preventDefault();
+        }
+        apellidosError.textContent = apellidos.validationMessage;
+        if (!apellidos.validity.valid) {
+            todoCorrecto = false;
+            event.preventDefault();
+        }
+        direccionError.textContent = direccion.validationMessage;
+        if (!direccion.validity.valid) {
+            todoCorrecto = false;
+            event.preventDefault();
+        }
+        emailError.textContent = email.validationMessage;
+        if (!email.validity.valid) {
+            todoCorrecto = false;
+            event.preventDefault();
+        }
+        if (todoCorrecto) {
+            let ventanilla = window.open("./emergente.html", "pop-up", "width=500px height=300px");
+            event.preventDefault();
+        }
+    });
+};
+
 
 
 //Función que recoge los kilos de los input, crea objetos, muestra las frutas en lateral y que vacía los input 
@@ -174,9 +223,6 @@ function limpiarFormulario() {
 }
 
 
-function abrirventana(){
-    window.name = "Ventana";
-}
 
 
 
