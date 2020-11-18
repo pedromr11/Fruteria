@@ -85,9 +85,10 @@ function frutitas(num){
     pedir[num].value = "";
 }
 
-/*
+
 //Función para mostrar las frutas compradas con sus precios y sus kilos, mostrar el mensaje con el tipo de fruta y calcular los precios totales y finales.
 function mostrar(){
+    
     textarea = document.getElementById("resultado");
     
     //Poner en blanco el textarea
@@ -148,6 +149,9 @@ function mostrar(){
     precioMedio = 0;
 
     temporizador();
+
+
+    
 }
 
 
@@ -162,12 +166,13 @@ function resetear(){
     mostrar2.innerHTML = " ";
 }
 
-*/
+
 
 //Botón que limpia el formulario
 function limpiarFormulario() {
     document.getElementById("reset").reset();
 }
+
 
 
 

@@ -103,31 +103,37 @@
     -->
 
     <div id="formulario">
-       <form action="" method="POST" id="reset">
-            <p>Nombre: <input type="text" name="nombre" required></p>
-            <p>Apellidos: <input type="text" name="apellidos" size="40" required></p>
-            <p>Dirección: <input type="text" name="direccion" size="60" required></p>
-            <p>Correo: <input type="email" name="correo" size="40" required></p>
+       <form action="" method="POST" id="reset" novalidate>
+            <label>Nombre: <input type="text" name="nombre" required></label>
+            <br><br>
+            <label>Apellidos: <input type="text" name="apellidos" size="40" required></label>
+            <br><br>
+            <label>Dirección: <input type="text" name="direccion" size="60" required></label>
+            <br><br>
+            <label>Correo: <input type="email" name="correo" size="40" required></label>
+            <br><br>
 
-            <p>Con que se paga:
-                <br>
+            <label>Con que se paga:
+                <br><br>
                 <input type="radio" name="hm" value="h" > Tarjeta
-                <br>
+                <br><br>
                 <input type="radio" name="hm" value="m" > A tocateja como los ganaderos
-            </p>
-
-            <p>Tarjeta cliente:
+            </label>
+            <br><br>
+            <label>Tarjeta cliente:
                 <br>
                 <input type="radio" name="si/no" value="si"> Si
-                <br>
+                <br><br>
                 <input type="radio" name="si/no" value="no"> No
+            </label>
 
-            </p>
-
-            <p>
+            <label><input type="hidden" name="codigoCliente" id="hidden"> </label>
+            <br><br>
+            <label>
                 <input type="submit" value="Realizar pedido">
+                <br><br>
                 <input type="reset" value="Borrar">
-            </p>
+            </label>
         </form>
     </div>
 
