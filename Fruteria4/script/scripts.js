@@ -17,7 +17,6 @@ let mostrar2;
 let textarea;
 let ventana;
 
-
 //Clases para crear los objetos(frutas)
 class Fruta {
     constructor(Nombre, Kilos, Precio){
@@ -82,11 +81,11 @@ function frutitas(num){
 
     mostrar2.innerHTML +="<p style='background-color:powderblue;'>" +  ArrayObjetos[num].Nombre +"---"+ pedir[num].value + "</p>"; 
 
-    console.log(mostrar2.childNodes.length-1);
 
     pedir[num].value = "";
 }
 
+/*
 //Función para mostrar las frutas compradas con sus precios y sus kilos, mostrar el mensaje con el tipo de fruta y calcular los precios totales y finales.
 function mostrar(){
     textarea = document.getElementById("resultado");
@@ -163,6 +162,12 @@ function resetear(){
     mostrar2.innerHTML = " ";
 }
 
+*/
+
+//Botón que limpia el formulario
+function limpiarFormulario() {
+    document.getElementById("reset").reset();
+}
 
 
 

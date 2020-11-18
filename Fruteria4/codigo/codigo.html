@@ -103,24 +103,32 @@
     -->
 
     <div id="formulario">
-       
-        <p>Nombre: <input type="text" name="nombre"></p>
-        <p>Apellidos: <input type="text" name="apellidos" size="40"></p>
-        <p>Dirección: <input type="text" name="direccion" size="60"></p>
-        <p>Correo: <input type="email" name="correo" size="40"></p>
+       <form action="" method="POST" id="reset">
+            <p>Nombre: <input type="text" name="nombre" required></p>
+            <p>Apellidos: <input type="text" name="apellidos" size="40" required></p>
+            <p>Dirección: <input type="text" name="direccion" size="60" required></p>
+            <p>Correo: <input type="email" name="correo" size="40" required></p>
 
-        <p>Con que se paga:
-            <br>
-            <input type="radio" name="hm" value="h"> Tarjeta
-            <br>
-            <input type="radio" name="hm" value="m"> A tocateja como los ganaderos
-        </p>
+            <p>Con que se paga:
+                <br>
+                <input type="radio" name="hm" value="h" > Tarjeta
+                <br>
+                <input type="radio" name="hm" value="m" > A tocateja como los ganaderos
+            </p>
 
-        <p>
-            <input type="submit" value="Realizar pedido">
-            <input type="reset" value="Borrar">
-        </p>
-        
+            <p>Tarjeta cliente:
+                <br>
+                <input type="radio" name="si/no" value="si"> Si
+                <br>
+                <input type="radio" name="si/no" value="no"> No
+
+            </p>
+
+            <p>
+                <input type="submit" value="Realizar pedido">
+                <input type="reset" value="Borrar">
+            </p>
+        </form>
     </div>
 
 </body>
