@@ -23,6 +23,9 @@ let email;
 let emailError;
 let todoCorrecto;
 let ventanilla;
+let maxletras;
+let minletras;
+let name
 
 //Clases para crear los objetos(frutas)
 class Fruta {
@@ -72,6 +75,17 @@ window.onload = () => {
             todoCorrecto = false;
             event.preventDefault();
         }
+        
+        /*
+        name = document.getElementById("nombre");
+
+        maxletras = 15;
+        minletras = 4;
+
+        if((name.length < minletras) && (name.length > maxletras)){
+            return false;
+        }
+        */
         apellidosError.textContent = apellidos.validationMessage;
         if (!apellidos.validity.valid) {
             todoCorrecto = false;
@@ -227,7 +241,20 @@ function limpiarFormulario() {
     document.getElementById("reset").reset();
 }
 
+/*
+function validar(event){
 
+    nombre = document.getElementById("nombre");
 
+    maxletras = 15;
+    minletras = 4;
+
+    if((nombre.length < minletras) && (nombre.length > maxletras)){
+        return false;
+    }
+
+}
+
+*/
 
 
