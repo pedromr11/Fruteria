@@ -52,6 +52,8 @@ class Invierno extends Fruta{
 }
 
 
+
+//Cuando carga la página comprueba que los datos del formulario estén completos, sino salta un aviso.
 window.onload = () => {
     form = document.getElementById("form1");
     nombre = document.getElementById("nombre");
@@ -87,6 +89,7 @@ window.onload = () => {
         }
         if (todoCorrecto) {
             ventanilla = window.open("./emergente.html", "pop-up", "width=500px height=300px");
+        
             event.preventDefault();
         }
     });
